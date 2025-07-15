@@ -13,8 +13,8 @@ jobs:
       - uses: actions/checkout@v4
       # ローカルWebサーバーをバックグラウンドで起動
       - run: |
-        php -S localhost:8000 -t src &
-        sleep 3
+          php -S localhost:8000 -t src &
+          sleep 3
       # Composerのセットアップと依存関係のインストール
       - uses: php-actions/composer@v6
         with:
